@@ -16,3 +16,14 @@ window.onscroll = () => {
   navbar.classList.remove("active");
   loginForm.classList.remove("active");
 };
+
+function openGmail() {
+  // Replace "brainxacademia@gmail.com" with the desired recipient email address
+  const recipientEmail = "brainxacademia@gmail.com";
+
+  // Gmail compose URL with the "to" field filled
+  const gmailComposeURL = `https://mail.google.com/mail/u/0/?view=cm&fs=1&to=${recipientEmail}`;
+
+  // Open Gmail in a new tab
+  window.open(gmailComposeURL, "_blank");
+}
