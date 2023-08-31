@@ -1,0 +1,117 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+.loading {
+    position:fixed;
+    background:black;
+    z-index:10;
+    width:80%;
+    height:80vh;
+    padding:10vh 10%;
+    pointer-events: all;
+    animation:fadeOut 0.5s ease forwards;
+    animation-delay:5.5s;
+}
+
+.loading img {
+    width:7.5vw;
+}
+
+.loading .separate {
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:3vh;
+}
+
+.loading img, .loading-text {
+    opacity:0;
+    animation: showThenFade 2s ease forwards;
+}
+
+.loading-text {
+    animation-delay:0.1s;
+}
+
+.brain, .academia {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    font-size:3vw;
+    font-weight:750;
+}
+
+.brain, .academia {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.brain span, .academia span {
+    transform:translateY(100px);
+    display:block;
+}
+
+.brain span {
+    animation:clipAnimation 2s ease forwards;
+    animation-delay:2.5s;
+}
+
+.academia span {
+    animation:clipAnimation 2s ease forwards;
+    animation-delay:4s;
+}
+
+@keyframes showThenFade {
+    0% {
+        opacity:0
+    }
+
+    20% {
+        opacity:1;
+    }
+
+    80% {
+        opacity:1;
+    }
+
+    100% {
+        opacity:0;
+    }
+}
+
+@keyframes clipAnimation {
+    0% {
+        transform:translateY(100px);
+    }
+
+    30% {
+        transform:translateY(0px);
+    }
+
+    80% {
+        opacity:1;
+        transform:translateY(0px);
+    }
+
+    100% {
+        opacity:0;
+        transform:translateY(0px);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity:1;
+        pointer-events: all;
+    }
+
+    to {
+        opacity:0;
+        pointer-events: none;
+    }
+}

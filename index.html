@@ -1,400 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BrainX Academia</title>
-    <!-- font awesome cdn link  -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
-    <!-- custom css link -->
-    <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="/BrainX Academia.png" />
-    <style>
-      .home {
-        background: linear-gradient(rgb(196, 240, 255), rgb(230, 246, 250));
-      }
-
-      .about {
-        background: linear-gradient(rgb(230, 246, 250), rgb(255, 255, 255));
-      }
-    </style>
-  </head>
-  <body>
-    <!-- header section starts -->
-
-    <header class="header">
-      <a href="#" class="logo">
-        <img src="/BrainX Academia.png" width="70px" class="home-logo" />BrainX
-        Academia</a
-      >
-
-      <nav class="navbar">
-        <a href="#home" class="hover-underline">home</a>
-        <a href="#about" class="hover-underline">about</a>
-
-        <a href="#subject" class="hover-underline">study materials</a>
-<!--         <a href="#courses" class="hover-underline">tutorials</a> -->
-        <!-- <a href="#blog" class="hover-underline">blog</a> -->
-        <a href="#contact" class="hover-underline">contact</a>
-      </nav>
-
-      <div class="icons">
-        <div id="menu-btn" class="fas fa-bars"></div>
-      </div>
-    </header>
-
-    <!-- header section ends -->
-    <!--home-->
-
-    <section class="home" id="home">
-      <div class="intro">
-        <img
-          src="https://images.wallpapersden.com/image/download/nebula_am5sZ2qUmZqaraWkpJRobWllrWdma2U.jpg"
-          class="home-background"
-        />
-        <h1>BrainX</h1>
-      </div>
-    </section>
-    <!--Home ends-->
-    <!-- about section starts -->
-
-    <section class="about" id="about">
-      <h1 class="heading">about us</h1>
-
-      <div class="container">
-        <figure class="about-image">
-          <img src="/BrainX Academia.png" height="500" />
-        </figure>
-
-        <div class="about-content">
-          <!-- <h3>18 years of experience</h3> -->
-          <p>
-            BrainX Academia is an avant-garde non-profit organization co-founded
-            by Ronit Singh and Afreen Hossain, driven by a steadfast commitment
-            to forge a platform for socioeconomically disadvantaged children.
-          </p>
-          <p>
-            To actualize its lofty ambitions, BrainX Academia engenders synergy
-            through alliances with local communities, educational institutions,
-            and impassioned volunteers. Orchestrating these strategic
-            partnerships, the organization conceives and implements innovative
-            programs that lay emphasis on holistic development, scholastic
-            eminence, and individual maturation. At the epicenter of Brain X
-            Academia's initiatives lies the invaluable concept of Education
-            Empowerment.
-          </p>
-          <a href="#" class="btn">
-            <span class="text text-1">read more</span>
-            <span class="text text-2" aria-hidden="true">read more</span>
-          </a>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;750&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="loading.css">
+</head>
+<body>
+    <div class="loading">
+        <div class="separate">
+            <img src="logo.svg" alt="">
+            <h1 class="loading-text">LOADING</h1>
         </div>
-      </div>
-    </section>
-
-    <!-- about section ends -->
-
-    <!-- subjects section starts -->
-
-    <section class="subjects" id="subject">
-      <h1 class="heading">our popular subjects</h1>
-
-      <div class="box-container">
-        <a href="social.html">
-          <div class="box">
-            <img src="images/subject-1.png" alt="" />
-            <h3>Social Science</h3>
-            <p>fun & challenging</p>
-          </div>
-        </a>
-        <a href="maths.html">
-          <div class="box">
-            <img src="images/subject-2.png" alt="" />
-            <h3>mathematics</h3>
-            <p>fun & challenging</p>
-          </div>
-        </a>
-        <a href="science.html">
-          <div class="box">
-            <img src="images/subject-3.png" alt="" />
-            <h3>science</h3>
-            <p>fun & challenging</p>
-          </div>
-        </a>
-      </div>
-    </section>
-
-    <!-- subject section ends -->
-
-    <!-- courses section starts -->
-
-    <!-- <section class="courses" id="courses">
-      <h1 class="heading">ONLINE FREE TUTORIALS WE SUGGEST</h1>
-
-      <div class="box-container">
-        <div class="box">
-          <div class="image shine">
-            <img
-              src="https://res.cloudinary.com/teepublic/image/private/s--nBGf4EwU--/t_Preview/b_rgb:ffffff,c_lpad,f_jpg,h_630,q_90,w_1200/v1544927995/production/designs/3746666_0.jpg"
-              alt=""
-            />
-            <h3>basic to advance</h3>
-          </div>
-          <div class="content">
-            <a href="https://youtu.be/ER9SspLe4Hg" target="_blank">
-              <h4>YT Link</h4>
+        <h1 class="brain"><span>BRAINX</span></h1>
+        <h1 class="academia"><span>ACADEMIA</span></h1>
+    </div>
+    <div class="cursor"><h1></h1></div>
+    <div class="nav">
+        <div class="navbar">
+            <a onclick="toggleMenu();" class="nav-icon">
+                <div class="nav-line"></div>
             </a>
-            <p>updated 08/06/2023</p>
-            <h3>JavaScript playlist</h3>
-          </div>
         </div>
-
-        <div class="box">
-          <div class="image shine">
-            <img
-              src="https://pluspng.com/img-png/python-logo-png-big-image-png-2400.png"
-              alt=""
-            />
-            <h3>basic to advance</h3>
-          </div>
-          <div class="content">
-            <a href="https://youtu.be/7wnove7K-ZQ" target="_blank">
-              <h4>YT Link</h4>
-            </a>
-            <p>updated 08/06/2023</p>
-            <h3>Python playlist</h3>
-          </div>
-        </div>
-
-        <div class="box">
-          <div class="image shine">
-            <img
-              src="https://th.bing.com/th/id/R.4d5858da8078c7905a7c4780cf052d48?rik=RQGAERTR2Gp4CA&riu=http%3a%2f%2forig05.deviantart.net%2fb175%2ff%2f2012%2f111%2f5%2f5%2fhtml_5_and_css_3_logo_psd_by_webdesignerbag-d4x4y4f.jpg&ehk=05fCNgsqS3zQbNP8vvipvfm0W6jdyT%2fVnSovrgV%2bGpg%3d&risl=&pid=ImgRaw&r=0"
-              alt=""
-            />
-            <h3>basic to advance</h3>
-          </div>
-          <div class="content">
-            <a href="https://youtu.be/mU6anWqZJcc" target="_blank">
-              <h4>YT Link</h4>
-            </a>
-            <p>updated 08/06/2023</p>
-            <h3>HTML and CSS</h3>
-          </div>
-        </div>
-
-        <div class="box">
-          <div class="image shine">
-            <img
-              src="https://th.bing.com/th/id/OIP.mjGv8GYjtuIzfTNlv-oGVAAAAA?pid=ImgDet&rs=1"
-              alt=""
-            />
-            <h3>basic to advance</h3>
-          </div>
-          <div class="content">
-            <a href="https://youtu.be/5_5oE5lgrhw" target="_blank">
-              <h4>YT Link</h4>
-            </a>
-            <p>updated 08/06/2023</p>
-            <h3>Data Structures</h3>
-          </div>
-        </div>
-
-        <div class="box">
-          <div class="image shine">
-            <img
-              src="https://th.bing.com/th/id/OIP.5oMiG-JQdJ8EBayvvDV7XgHaFj?pid=ImgDet&rs=1"
-              alt=""
-            />
-            <h3>basic to advance</h3>
-          </div>
-          <div class="content">
-            <a href="https://youtu.be/un6ZyFkqFKo" target="_blank">
-              <h4>YT Link</h4>
-            </a>
-            <p>updated 08/06/2023</p>
-            <h3>Go lang</h3>
-          </div>
-        </div>
-
-        <div class="box">
-          <div class="image shine">
-            <img
-              src="https://download.logo.wine/logo/Java_(programming_language)/Java_(programming_language)-Logo.wine.png"
-              alt=""
-            />
-            <h3>basic to advance</h3>
-          </div>
-          <div class="content">
-            <a href="https://youtu.be/ntLJmHOJ0ME" target="_blank">
-              <h4>YT Link</h4>
-            </a>
-            <p>updated 08/06/2023</p>
-            <h3>Java playlist</h3>
-          </div>
-        </div>
-        <div class="box">
-          <div class="image shine">
-            <img
-              src="https://getwallpapers.com/wallpaper/full/8/2/3/1444400-large-white-background-wallpaper-images-1920x1080-images.jpg"
-              alt=""
-            />
-            <h3>basic to advance</h3>
-          </div>
-          <div class="content">
-            <a href="https://youtu.be/mXjZQX3UzOs" target="_blank">
-              <h4>YT Link</h4>
-            </a>
-            <p>updated 08/06/2023</p>
-
-            <h3>Android app development</h3>
-          </div>
-        </div>
-        <div class="box">
-          <div class="image shine">
-            <img
-              src="https://res.cloudinary.com/teepublic/image/private/s---N_UxPMx--/t_Preview/b_rgb:ffffff,c_lpad,f_jpg,h_630,q_90,w_1200/v1647503608/production/designs/28633478_0.jpg"
-              alt=""
-            />
-            <h3>basic to advance</h3>
-          </div>
-          <div class="content">
-            <a href="https://youtu.be/BpPEoZW5IiY" target="_blank">
-              <h4>YT Link</h4>
-            </a>
-            <p>updated 08/06/2023</p>
-            <h3>Rust language</h3>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-    <!-- courses section ends -->
-
-    <!-- blog section starts -->
-
-    <section class="blog" id="blog">
-      <h1 class="heading">our blogs</h1>
-
-      <div class="box-container">
-        <div class="box">
-          <div class="image shine">
-            <img src="Blog 1 part 1 image.png" alt="" />
-            <h3>August 1, 2023</h3>
-          </div>
-          <div class="content">
-            <div class="icons">
-              <a href="#"><i class="fas fa-user"></i>Prakhar Tiwary</a>
+        <div class="menu">
+            <a onclick="lenis.scrollTo('.hero');" style="--data-index:1">HOME</a>
+            <a onclick="lenis.scrollTo('.about');" style="--data-index:2">ABOUT</a>
+            <a href="team.html" style="--data-index:3">TEAM</a>
+            <a onclick="lenis.scrollTo('.resources');" style="--data-index:4">RESOURCES</a>
+            <a href="podcast.html" style="--data-index:5">PODCAST</a>
+            <div class="nav-socials">
+                <a href="mailto:mailto:brainxacademia@gmail.com" style="--data-index:6">EMAIL</a>
+                <a href="https://www.linkedin.com/company/brainx-academia/" style="--data-index:7">LINKEDIN</a>
             </div>
-            <h3>You grew up with a chatbot</h3>
-            <p>Part 1</p>
-            <a href="You grew up with a chatbot part 1.pdf" class="btn">
-              <span class="text text-1">read more </span>
-              <span class="text text-2" aria-hidden="true">read more</span>
-            </a>
-          </div>
         </div>
-
-        <div class="box">
-          <div class="image shine">
-            <img src="Blog 1 part 2 image.png" alt="" />
-            <h3>August 2, 2023</h3>
-          </div>
-          <div class="content">
-            <div class="icons">
-              <a href="#"><i class="fas fa-user"></i>Prakhar Tiwary</a>
+    </div>
+    <div class="scroll-container">
+        <div class="hero">
+            <h1>We're changing education</h1>
+            <img src="round.svg" alt="">
+            <a onclick="lenis.scrollTo('#about');">How?</a>
+        </div>
+        <div class="images">
+            <div class="slide" style="--data-index:0;" id="first">
+                <img src="chemistry.jpg" alt="" style="--data-index:0;">
+                <p style="--data-index:0;">Through Science</p>
             </div>
-            <h3>You grew up with a chatbot</h3>
-            <p>Part 2</p>
-            <a href="You grew up with a chatbot part 2.pdf" class="btn">
-              <span class="text text-1">read more</span>
-              <span class="text text-2" aria-hidden="true">read more</span>
-            </a>
-          </div>
-        </div>
-        <div class="box">
-          <div class="image shine">
-            <img src="Blog 1 part 3 image.png" alt="" />
-            <h3>August 2, 2023</h3>
-          </div>
-          <div class="content">
-            <div class="icons">
-              <a href="#"><i class="fas fa-user"></i>Prakhar Tiwary</a>
+            <div class="slide" style="--data-index:1;" id="second">
+                <img src="physics.jpg" alt="" style="--data-index:1;">
+                <p style="--data-index:1;">Through Science</p>
             </div>
-            <h3>You grew up with a chatbot</h3>
-            <p>Part 3</p>
-            <a href="You grew up with a chatbot part 3.pdf" class="btn">
-              <span class="text text-1">read more</span>
-              <span class="text text-2" aria-hidden="true">read more</span>
+            <div class="slide" style="--data-index:2;" id="third">
+                <img src="maths.jpg" alt="" style="--data-index:2;">
+                <p style="--data-index:2;">Through Maths</p>
+            </div>
+            <div class="slide" style="--data-index:3;" id="fourth">
+                <img src="history.jpg" alt="" style="--data-index:3;">
+                <p style="--data-index:3;">Through Social Studies</p>
+            </div>
+        </div>
+        <div class="about" id="about">
+            <h1>AT BRAINX ACADEMIA, WE <mark>EMPOWER</mark> THE UNDERSERVED</h1>
+            <div class="small">
+                <a href="team.html">MEET THE TEAM</a>
+                <p>BrainX Academia Is An Avant-Garde Non-Profit Organization Co-Founded By Ronit Singh And Afreen Hossain, Driven By A Steadfast Commitment To Forge A Platform For Socioeconomically Disadvantaged Children.</p>
+            </div>
+        </div>
+
+        <div class="resources" id="resources">
+            <h1>AREAS WE <div></div> COVER</h1>
+            <a href="resources.html#science" class="section-link">
+                <div class="resource-container">
+                    <div class="video">
+                        <video src="chemistry.mp4" muted="" width="100%" loop></video>
+                    </div>
+                    <div class="scroll-animation-container">
+                        <div class="scroll-text-1">
+                            <h1>SCIENCE</h1>
+                            <div class="circle"></div>
+                            <h1>SCIENCE</h1>
+                            <div class="circle"></div>
+                        </div>
+                        <div class="scroll-text-2">
+                            <h1>SCIENCE</h1>
+                            <div class="circle"></div>
+                            <h1>SCIENCE</h1>
+                            <div class="circle"></div>
+                        </div>
+                        <div class="scroll-text-3">
+                            <h1>SCIENCE</h1>
+                            <div class="circle"></div>
+                            <h1>SCIENCE</h1>
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                    <p>CLICK TO VIEW RESOURCES</p>
+                </div>
             </a>
-          </div>
+            <a href="resources.html#maths" class="section-link">
+                <div class="resource-container">
+                    <div class="video">
+                        <video src="maths.mp4" muted="" width="100%" loop></video>
+                    </div>
+                    <div class="scroll-animation-container">
+                        <div class="scroll-text-1">
+                            <h1>MATHS</h1>
+                            <div class="circle"></div>
+                            <h1>MATHS</h1>
+                            <div class="circle"></div>
+                        </div>
+                        <div class="scroll-text-2">
+                            <h1>MATHS</h1>
+                            <div class="circle"></div>
+                            <h1>MATHS</h1>
+                            <div class="circle"></div>
+                        </div>
+                        <div class="scroll-text-3">
+                            <h1>MATHS</h1>
+                            <div class="circle"></div>
+                            <h1>MATHS</h1>
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                    <p>CLICK TO VIEW RESOURCES</p>
+                </div>
+            </a>
+            <a href="resources.html#social-science" class="section-link">
+                <div class="resource-container">
+                    <div class="video">
+                        <video src="history.mp4" muted="" width="100%" loop></video>
+                    </div>
+                    <div class="scroll-animation-container">
+                        <div class="scroll-text-1">
+                            <h1>HISTORY</h1>
+                            <div class="circle"></div>
+                            <h1>HISTORY</h1>
+                            <div class="circle"></div>
+                        </div>
+                        <div class="scroll-text-2">
+                            <h1>HISTORY</h1>
+                            <div class="circle"></div>
+                            <h1>HISTORY</h1>
+                            <div class="circle"></div>
+                        </div>
+                        <div class="scroll-text-3">
+                            <h1>HISTORY</h1>
+                            <div class="circle"></div>
+                            <h1>HISTORY</h1>
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                    <p>CLICK TO VIEW RESOURCES</p>
+                </div>
+            </a>
         </div>
-      </div>
-    </section>
-
-    <!-- blog section ends -->
-
-    <!-- footer section stars -->
-
-    <section class="footer" id="contact">
-      <div class="box-container">
-        <div class="box">
-          <h3>Contact us</h3>
-          <!-- <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum
-            beatae.
-          </p> -->
-          <div class="share">
-            <!-- <a href="#" class="fab fa-facebook-f"></a>
-            <a href="#" class="fab fa-twitter"></a>
-            <a href="" class="fab fa-instagram"></a> -->
-            <a
-              href="https://www.linkedin.com/company/brainx-academia/"
-              target="_blank"
-              class="fab fa-linkedin"
-            ></a>
-            <br />
-            <br /><br />
-            <button
-              onclick="openGmail();"
-              style="
-                background: none;
-                font-size: 2rem;
-                text-transform: lowercase;
-                cursor: pointer;
-              "
-            >
-              brainxacademia@gmail.com
-            </button>
-          </div>
+        <div class="other-topics">
+            <p>THESE ARE SOME OF THE HIGHLIGHTS, HOWEVER, WE ALSO OFFER RESOURCES IN THE FOLLOWS AREAS FOR STUDY AS WELL. FEEL FREE TO CLICK ON THE BUTTONS TO GET ACCESS TO THOSE RESOURCES</p>
+            <div class="topic-buttons">
+                <a href="resources.html#social-science">SOCIAL SCIENCE</a>
+                <a href="resources.html#maths">MATHEMATICS</a>
+                <a href="resources.html#science">SCIENCE</a>
+            </div>
         </div>
-
-        <!-- <div class="box">
-          <h3>contact us</h3>
-          <p>+1234 587 1478</p>
-          <a href="#" class="link">ninjashub4@gmail.com</a>
-        </div> -->
-
-        <div class="box">
-          <h3>localization</h3>
-          <p>India</p>
+        <div class="contact">
+            <h1>CAN'T HEAR YOU! GET CLOSER!</h1>
+            <a href="mailto:brainxacademia@gmail.com">GET IN TOUCH</a>
         </div>
-      </div>
-      <div class="credit">created by <span>BrainX Tech team </span></div>
-    </section>
-
-    <!-- footer section ends -->
-
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <!-- custom js -->
-    <script src="script.js"></script>
-  </body>
+        <div class="socials">
+            <h1>FOLLOW US</h1>
+            <a href="mailto:brainxacademia@gmail.com">
+                <div class="non-hover">
+                    <h1>EMAIL</h1>
+                    <img src="arrow-white.svg" alt="">
+                </div>
+                <div class="hover">
+                    <div class="scroll-text-1">
+                        <h1>EMAIL</h1>
+                        <img src="arrow-black.svg" alt="" class="icon">
+                        <h1>EMAIL</h1>
+                        <img src="arrow-black.svg" alt="" class="icon">
+                    </div>
+                    <div class="scroll-text-2">
+                        <h1>EMAIL</h1>
+                        <img src="arrow-black.svg" alt="" class="icon">
+                        <h1>EMAIL</h1>
+                        <img src="arrow-black.svg" alt="" class="icon">
+                    </div>
+                    <div class="scroll-text-3">
+                        <h1>EMAIL</h1>
+                        <img src="arrow-black.svg" alt="" class="icon">
+                        <h1>EMAIL</h1>
+                        <img src="arrow-black.svg" alt="" class="icon">
+                    </div>
+                    <div class="scroll-text-4">
+                        <h1>EMAIL</h1>
+                        <img src="arrow-black.svg" alt="" class="icon">
+                        <h1>EMAIL</h1>
+                        <img src="arrow-black.svg" alt="" class="icon">
+                    </div>
+                </div>
+            </a>
+            <a href="https://www.linkedin.com/company/brainx-academia/" style="border-bottom: 2px solid #444;">
+                <div class="non-hover">
+                    <h1>LINKEDIN</h1>
+                    <img src="arrow-white.svg" alt="">
+                </div>
+                <div class="hover">
+                    <div class="scroll-text-1">
+                        <h1>LINKEDIN</h1>
+                        <img src="arrow-black.svg" alt="" class="icon">
+                        <h1>LINKEDIN</h1>
+                        <img src="arrow-black.svg" alt="" class="icon">
+                    </div>
+                    <div class="scroll-text-2">
+                        <h1>LINKEDIN</h1>
+                        <img src="arrow-black.svg" alt="" class="icon">
+                        <h1>LINKEDIN</h1>
+                        <img src="arrow-black.svg" alt="" class="icon">
+                    </div>
+                    <div class="scroll-text-3">
+                        <h1>LINKEDIN</h1>
+                        <img src="arrow-black.svg" alt="" class="icon">
+                        <h1>LINKEDIN</h1>
+                        <img src="arrow-black.svg" alt="" class="icon">
+                    </div>
+                    <div class="scroll-text-4">
+                        <h1>LINKEDIN</h1>
+                        <img src="arrow-black.svg" alt="" class="icon">
+                        <h1>LINKEDIN</h1>
+                        <img src="arrow-black.svg" alt="" class="icon">
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="footer">
+            <div class="page-links">
+                <div class="brand">
+                    <h1>BRAINX ACADEMIA</h1>
+                </div>
+                <div class="links-container">
+                    <a onclick="lenis.scrollTo('.hero');">HOME</a>
+                    <a onclick="lenis.scrollTo('#about');">ABOUT</a>
+                    <a href="team.html">TEAM</a>
+                    <a onclick="lenis.scrollTo('.resources');">RESOURCES</a>
+                    <a href="podcast.html">PODCAST</a>
+                </div>
+            </div>
+            <div class="socials-links">
+                <div class="copyright">
+                    <p>Copyright &copy; 2023. All Rights Reserved. BrainX Academia.</p>
+                    <p>Designed and Developed by BrainX Academia Team</p>
+                </div>
+                <div class="social-links-container">
+                    <a href="mailto:brainxacademia@gmail.com">EMAIL</a>
+                    <a href="https://www.linkedin.com/company/brainx-academia/">LINKEDIN</a>
+                    <a href="mailto:brainxacademia@gmail.com">WORK WITH US</a>
+                </div>
+            </div>
+            <div class="other-links">
+                <a href="">TERMS AND CONDITIONS</a>
+                <a href="">PRIVACY POLICY</a>
+                <a href="">HELP</a>
+                <a href="">COPYRIGHT DISCLAIMER</a>
+            </div>
+        </div>
+    </div>
+    <script src="cursor.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+    <script src="transitions.js"></script>
+</body>
 </html>

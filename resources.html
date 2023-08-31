@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrainX Academia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;750&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="resources.css">
+    <link rel="stylesheet" href="loading.css">
+</head>
+<body>
+    <div class="cursor"><h1></h1></div>
+    <div class="nav">
+        <div class="navbar">
+            <a onclick="toggleMenu();" class="nav-icon">
+                <div class="nav-line"></div>
+            </a>
+        </div>
+        <div class="menu">
+            <a href="index.html" style="--data-index:1">HOME</a>
+            <a href="index.html#about" style="--data-index:2">ABOUT</a>
+            <a href="" style="--data-index:3">TEAM</a>
+            <a onclick="lenis.scrollTo('.resources');" style="--data-index:4">RESOURCES</a>
+            <a href="podcast.html" style="--data-index:5">PODCAST</a>
+            <div class="nav-socials">
+                <a href="mailto:mailto:brainxacademia@gmail.com" style="--data-index:6">EMAIL</a>
+                <a href="https://www.linkedin.com/company/brainx-academia/" style="--data-index:7">LINKEDIN</a>
+            </div>
+        </div>
+    </div>
+    <div class="scroll-container">
+        <div class="hero">
+            <h1>EMPOWERMENT THROUGH <mark>EDUCATIONAL</mark> RESOURCES</h1>
+            <a onclick="lenis.scrollTo('.resources');">SEE TOPICS</a>
+        </div>
+        <div class="resources">
+            <div class="resources-menu">
+                <a onclick="lenis.scrollTo('.social-science');">Social Science</a>
+                <a onclick="lenis.scrollTo('.maths');">Mathematics</a>
+                <a onclick="lenis.scrollTo('.science');">Science</a>
+            </div>
+            <div class="topic social-science" id="social-science">
+                <h1>SOCIAL SCIENCE</h1>
+                <div class="subtopic" style="margin-top:5vh;">
+                    <h2>HISTORY</h2>
+                    <div class="booklets">
+                        <div class="image">
+                            <img src="history.jpg" alt="">
+                        </div>
+                        <div class="links">
+                            <a href="">The French Revolution</a>
+                            <a href="">Socialism In Europe And The Russian Revolution</a>
+                            <a href="">Nazism And The Rise Of Hitler</a>
+                            <a href="">Forest Society And Colonialism</a>
+                            <a href="">Pastoralists In The Modern World</a>
+                            <a href="">Peasants And Farmers</a>
+                            <a href="">History And Sports: The Story Of Cricket</a>
+                            <a href="">Clothing: A Social History</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="subtopic">
+                    <h2>GEOGRAPHY</h2>
+                    <div class="booklets">
+                        <div class="image">
+                            <img src="geography.jpg" alt="">
+                        </div>
+                        <div class="links">
+                            <a href="">India - Size And Location</a>
+                            <a href="">Physical Features Of India</a>
+                            <a href="">Drainage</a>
+                            <a href="">Climate</a>
+                            <a href="">Natural Vegetation And Wildlife</a>
+                            <a href="">Population</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="subtopic">
+                    <h2>ECONOMICS</h2>
+                    <div class="booklets">
+                        <div class="image">
+                            <img src="economics.jpg" alt="">
+                        </div>
+                        <div class="links">
+                            <a href="">The Story Of Village Palampur</a>
+                            <a href="">People As Resources</a>
+                            <a href="">Poverty As A Challenge</a>
+                            <a href="">Food Security In India</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="subtopic">
+                    <h2>POLITICAL SCIENCE</h2>
+                    <div class="booklets">
+                        <div class="image">
+                            <img src="political-science.jpg" alt="">
+                        </div>
+                        <div class="links">
+                            <a href="">Democracy In The Contemporary World</a>
+                            <a href="">What Is Democracy? Why Democracy?</a>
+                            <a href="">Constitutional Design</a>
+                            <a href="">Electoral Politics</a>
+                            <a href="">Working Of Institutions</a>
+                            <a href="">Democratic Rights</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="topic maths" id="maths">
+                <h1>MATHS</h1>
+                <div class="booklets">
+                    <div class="image">
+                        <img src="maths.jpg" alt="">
+                    </div>
+                    <div class="links">
+                        <a href="">Coming soon</a>
+                    </div>
+                </div>
+            </div>
+            <div class="topic science" id="science">
+                <h1>SCIENCE</h1>
+                <div class="subtopic">
+                    <h2>CLASS 9</h2>
+                    <div class="booklets">
+                        <div class="image">
+                            <img src="chemistry.jpg" alt="">
+                        </div>
+                        <div class="links">
+                            <a href="">Matter In Our Surroundings</a>
+                            <a href="">Is Matter Around Us Pure?</a>
+                            <a href="">Atoms And Molecules</a>
+                            <a href="">Structure Of The Atom</a>
+                            <a href="">The Fundamental Unit Of Life</a>
+                            <a href="">Tissues</a>
+                            <a href="">Diversity In Living Organisms</a>
+                            <a href="">Motion</a>
+                            <a href="">Force And Laws Of Motion</a>
+                            <a href="">Gravitation</a>
+                            <a href="">Work And Energy</a>
+                            <a href="">Sound</a>
+                            <a href="">Natural Resources</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="subtopic">
+                    <h2>CLASS 10</h2>
+                    <div class="booklets">
+                        <div class="image">
+                            <img src="physics.jpg" alt="">
+                        </div>
+                        <div class="links">
+                            <a href="">Chemical Reactions And Equations</a>
+                            <a href="">Acids, Bases And Salts</a>
+                            <a href="">Metals And Non-Metals</a>
+                            <a href="">Carbon And Its Compounds</a>
+                            <a href="">Periodic Classification Of Elements</a>
+                            <a href="">Life Processes</a>
+                            <a href="">Control And Coordination</a>
+                            <a href="">How Do Organisms Reproduce?</a>
+                            <a href="">Heredity And Evolution</a>
+                            <a href="">Light: Reflection And Refraction</a>
+                            <a href="">Human Eye And Colourful World</a>
+                            <a href="">Magnetic Effects Of Electric Current</a>
+                            <a href="">Sources Of Energy</a>
+                            <a href="">Our Environment</a>
+                            <a href="">Management Of Natural Resources</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="page-links">
+            <div class="brand">
+                <h1>BRAINX ACADEMIA</h1>
+            </div>
+            <div class="links-container">
+                <a href="index.html">HOME</a>
+                <a href="index.html#about">ABOUT</a>
+                <a href="">TEAM</a>
+                <a onclick="lenis.scrollTo('.resources');">RESOURCES</a>
+                <a href="podcast.html">PODCAST</a>
+            </div>
+        </div>
+        <div class="socials-links">
+            <div class="copyright">
+                <p>Copyright &copy; 2023. All Rights Reserved. BrainX Academia.</p>
+                <p>Designed and Developed by BrainX Academia Team</p>
+            </div>
+            <div class="social-links-container">
+                <a href="mailto:brainxacademia@gmail.com">EMAIL</a>
+                <a href="https://www.linkedin.com/company/brainx-academia/">LINKEDIN</a>
+                <a href="mailto:brainxacademia@gmail.com">WORK WITH US</a>
+            </div>
+        </div>
+        <div class="other-links">
+            <a href="">TERMS AND CONDITIONS</a>
+            <a href="">PRIVACY POLICY</a>
+            <a href="">HELP</a>
+            <a href="">COPYRIGHT DISCLAIMER</a>
+        </div>
+    </div>
+</div>
+    <script src="cursor.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+    <script src="transitions.js"></script>
+</body>
+</html>
