@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400&display=swap'); /* Import the Syne font */
+
+
 * {
     margin:0;
     padding:0;
@@ -350,7 +353,7 @@ body {
 .about {
     width:70%;
     height:100vh;
-    padding: 0 15%;
+    padding: 5vh 14% 0vh;
     display:flex;
     flex-direction: column;
     gap:3vh;
@@ -1013,4 +1016,37 @@ body {
     100% {
         transform: translateX(-200%) translateY(-50%);
     }
+}
+
+.typing-text {
+    font-family: "Syne", sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    width: 40ch; 
+    font-size: 4ch; 
+    font-weight: 700; 
+    padding: 10vh 13% 10vh; 
+    animation: typing 5s steps(30) infinite alternate, blink .5s step-end infinite;
+    display: inline-block; 
+}
+
+.typing-text:hover{
+    color: #FDB538;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.copyright{
+    padding-bottom: 3vh;
 }
