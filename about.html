@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrainX Academia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;750&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="about.css">
+       <link rel="shortcut icon" href="BrainX Academia.png" type="image/x-icon">
+</head>
+<body>
+    <!--Navbar-->
+    <div class="cursor"><h1></h1></div>
+    <div class="nav">
+        <div class="navbar">
+            <a onclick="toggleMenu();" class="nav-icon">
+                <div class="nav-line"></div>
+            </a>
+        </div>
+        <div class="menu">
+            <a href="index.html" style="--data-index:1">HOME</a>
+            <a href="about.html" style="--data-index:2">ABOUT</a>
+            <a href="team.html" style="--data-index:3">TEAM</a>
+            <a href="resources.html" style="--data-index:4">RESOURCES</a>
+            <a href="podcast.html" style="--data-index:5">PODCAST</a>
+            <div class="nav-socials">
+                <a href="mailto:mailto:brainxacademia@gmail.com" style="--data-index:6">EMAIL</a>
+                <a href="https://www.linkedin.com/company/brainx-academia/" style="--data-index:7">LINKEDIN</a>
+            </div>
+        </div>
+    </div>
+
+    <!--Main content-->
+    <div class="main">
+        <div class="photos">
+          <div class="name">
+            <img src="Ronit.jpg" alt="Ronit's Image" class="member-image">
+            <h1>Ronit Singh</h1>
+          </div>
+          <div class="name">
+            <img src="Afreen.jpg" alt="Afreen's Image" class="member-image">
+            <h1>Afreen Hossain</h1>
+          </div>
+        </div>
+        <div class="abt_intro">
+          <p id="abt_info">BrainX Academia, a nonprofit organization, was established in January 2023 by two visionary 
+            high schoolers, Ronit Singh and Afreen Hossain. Unlike many educational initiatives that focus on 
+            specific communities, BrainX Academia is committed to holistic development for all children, 
+            regardless of their economic or social background. Our mission is to provide a comprehensive 
+            and inclusive educational environment that nurtures the intellectual and personal growth of 
+            every student, empowering them to reach their full potential. Through innovative programs and 
+            dedicated mentorship, we strive to break down barriers and create opportunities for learning 
+            and development for every young mind</p>
+        </div>
+      </div>
+
+    <!--Footer-->
+    <div class="footer">
+        <div class="page-links">
+            <div class="brand">
+                <h1>BRAINX ACADEMIA</h1>
+            </div>
+            <div class="links-container">
+                <a onclick="lenis.scrollTo('.hero');">HOME</a>
+                <a onclick="lenis.scrollTo('#about');">ABOUT</a>
+                <a href="team.html">TEAM</a>
+                <a onclick="lenis.scrollTo('.resources');">RESOURCES</a>
+                <a href="podcast.html">PODCAST</a>
+            </div>
+        </div>
+        <div class="socials-links">
+            <div class="copyright">
+                <p>Copyright &copy; 2023. All Rights Reserved. BrainX Academia.</p>
+                <p>Designed and Developed by BrainX Academia Tech Team</p>
+            </div>
+            <div class="social-links-container">
+                <a href="mailto:brainxacademia@gmail.com">EMAIL</a>
+                <a href="https://www.linkedin.com/company/brainx-academia/">LINKEDIN</a>
+                <a href="https://www.instagram.com/brainxacademia?igsh=MWVjMDYyZjV0Y3dpaw==">INSTAGRAM</a>
+                <a href="https://www.facebook.com/profile.php?id=61561968457867&mibextid=ZbWKwL">FACEBOOK</a>
+                <a href="https://open.spotify.com/show/1tFOOMoRKgJLoC9yEyl8zG?si=19uyEtWaQdWLcKjGKWwtTA">SPOTIFY</a>
+                <a href="mailto:brainxacademia@gmail.com">WORK WITH US</a>
+            </div>
+        </div>
+        <div class="other-links">
+            <a href="">TERMS AND CONDITIONS</a>
+            <a href="">PRIVACY POLICY</a>
+            <a href="">HELP</a>
+            <a href="">COPYRIGHT DISCLAIMER</a>
+        </div>
+    </div>
+    <script src="cursor.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+    <script src="transitions.js"></script>
+</body>
