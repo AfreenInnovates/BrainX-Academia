@@ -280,7 +280,7 @@ body {
 
 .footer > div {
     display:flex;
-    flex-wrap: wrap;
+    flex -wrap: wrap;
     width:100%;
     justify-content: space-between;
     align-items: center;
@@ -351,11 +351,11 @@ body {
 }
 
 .member .image {
-    width:100%;
-    height:90vh;
-    border-radius:2vw;
-    background:#333;
-    margin-bottom:5vh;
+    width: 100%;
+    height: auto; 
+    border-radius: 2vw;
+    background: #333;
+    margin-bottom: 5vh;
 }
 
 .member h1 {
@@ -371,6 +371,45 @@ body {
     margin-bottom:5vh;
 }
 
+.member .intro {
+    margin-bottom: 20px; 
+    text-align: justify; 
+  }
+  
+  .member .intro:first-child {
+    margin-top: 20px; 
+  }
+
+
+  .intro:hover{
+    color:#f1ba5b;
+  }
+
+.name {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.name img{
+    align-content: center;
+}
+
+.name h1{
+    text-align: center;
+}
+
+.details {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    margin: 20px 40px; 
+    border-color: #FDB538;
+    border-style: solid;
+}
+  
+
 .member p {
     width:80%;
     padding-left:10%;
@@ -381,3 +420,13 @@ body {
 .hero p {
     margin-top:3vh;
 }
+
+.member-image {
+    width: 20vw;
+    height: 20vw;
+    border-radius: 100%;
+    object-fit: cover;
+    padding-bottom: 10px;
+    display: block;
+    margin: 0 auto; 
+  }
